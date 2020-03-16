@@ -2,7 +2,7 @@ import re
 
 with open("full_words.txt", "r") as f:
     words = f.read()
-    print(len(words))
+    print(len(words.split(' ')))
 
 print("Enter ! to stop.")
 
@@ -22,5 +22,5 @@ while True:
     ip = ip+input(ip)
 
     if ip[-1:] == '!':
-        print(sugg)
+        print(op)
         break
